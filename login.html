@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <style>
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url(https://wallpapertag.com/wallpaper/full/e/7/1/422283-cool-hd-universe-wallpaper-1920x1080-for-ipad.jpg);
+  background-size: 1800px;
+}
+#signin{
+  display:flex;
+  
+}
+form{
+    margin:auto;
+    margin-top: 20px;
+    text-align: center;
+    width:35%;
+    display: flex;
+    flex-direction: column;
+    /* border:2px solid red; */
+    justify-content: center;
+    align-items:center;
+    gap:4%;
+    margin-top: 5%;
+    
+    }
+      form > input{
+        margin:3%;
+        width:60%;
+        justify-content: center;
+        height: 20%;
+    }
+    h1{
+    font-family:cursive;
+    font-size:26px;
+    margin:auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-decoration:underline;
+    color:rgb(245, 55, 125);
+    }
+    .nav{
+      display: flex;
+      padding:10px;
+      
+    }
+
+</style>
+ </head>
+ <body>
+   
+    <div id="signin">
+      
+      <form>
+        <h1>Please Enter Your Details</h1>
+        <input type="email" id="email" placeholder="Enter Your Email"/>
+        <input type="password" id="password" placeholder="Enter Your Password"/>
+        <input type="submit" value="Submit" />
+        <div class="nav">
+          <a href="./index.html">Signup</a>
+          <a href="./signin.html">Signin</a>
+      </form>
+    </div>
+  </body>
+  <script>
+
+
+  
+    document.querySelector("form").addEventListener("submit",userLogin)
+    let userData = JSON.parse(localStorage.getItem("account-data"))|| []
+    function userLogin(e){
+      e.preventDefault()
+    let heading = document.getElementById("heading")
+     let  email = document.getElementById("email").value
+     let  password = document.getElementById("password").value
+
+
+      let data = userData.find(user => user.email === email && user.password === password)
+        
+      if(data){
+        heading.innerText = "Sign in Successful"
+      } else {
+        heading.innerText = "Wrong Credentials"
+      }
+ }
+
+  </script>
+</html>
