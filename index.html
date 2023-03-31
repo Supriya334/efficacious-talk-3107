@@ -5,399 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-       header{
-        border:2px solid rgb(0, 255, 55);
-        /* flex-direction: row; */
-        height:30%;
-        width:100%;
-        padding:5px;
-       }
-       .nav-1{
-       
-        display: flex;
-        flex-direction: row;
-        padding-right: 40px;
-        justify-content: space-around;
-        height:10%;
-        border:2px solid black;
-        width:100%;
-        background-color: rgb(247, 79, 107);
-       }
-       .nav-1 > a {
-        padding:20px;
-        justify-content: space-around;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font-size: 14px;
-        
-       
-       }
-       
-       .nav-1 > p{
-        margin: 0px;
-        margin-top: 35px;
-       }
-       .nav-2{
-        display: flex;
-        /* border:2px solid red; */
-        /* height:10%; */
-        justify-content: space-around;
-        padding:6px;
-        max-width: 1165px;
-        width:100%;
-        margin: auto;
-       }
-       .nav-2 > a{
-        margin-top:40px;
-        text-decoration: none;
-       }
-      
-       .nav-3{
-        border:2px solid blue;
-        display: flex;
-        justify-content: space-around;
-        height:10%;
-      
-       }
-       .nav-3 > p{
-        margin-top: 27px;
-       }
-       #top{
-        display: flex;
-        margin:auto;
-        padding:10px;
-       }
-
-       #middle{
-        display: flex;
-        margin:auto;
-        padding:30px;
-        column-gap: 16px;
-        justify-content: center;
-
-       }
-       #img3{
-        margin: auto;
-        width:80%;
-
-       }
-       #middle-2{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-
-
-       }
-       #middle-2 > .img4 {
-        border:2px solid red;
-        border-radius: 20px;
-         margin: 30px;
-       }
-       #middle-2 > .img4 > img{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        width:100%;
-
-       }
-       #dry-buy{
-        display: flex;
-        justify-content: center;
-        column-gap: 16px;
-       
-       }
-       #dry-buy > .two-dry-buy > img{
-        border-radius: 20px;
-
-       }
-       #golas{
-        display:flex;
-        column-gap: 40px;
-        justify-content: center;
-       }
-       #golas > .goli-1 > img{
-        border-radius: 35px;
-        margin: auto;
-        justify-content: center;
-       }
-       #box-5{
-       display: flex;
-       column-gap: 40px;
-       justify-content: center;
-       padding:25px;
-       }
-       #box-5 > .boxi{
-        border:2px solid grey;
-        border-radius: 5px;
-       }
-       #trend{
-        display: flex;
-        justify-content: center;
-        column-gap: 40px;
-       padding:25px;
-       }
-       #trend > .trd{
-        border:2px solid grey;
-        border-radius: 5px;
-       }
-       #pampers{
-        display: flex;
-        justify-content: center;
-        column-gap: 40px;
-       padding:25px;
-
-       }
-       #pampers > .pamp{
-        border:2px solid grey;
-        border-radius: 6px;
-       }
-       #matrix{
-        display: flex;
-        justify-content: center;
-        column-gap: 20px;
-        width:100%; 
-      
-       }
-       #matrix > .mat{
-        border:2px solid grey;
-        border-radius: 5px;
-       }
-       #matrix > .mat > img{
-        border-radius: 5px;
-       }
-       #the-three{
-        display: flex;
-        justify-content: center;
-        column-gap: 20px;
-        width:100%; 
-        margin:40px;
-
-       }
-       #the-three > .one{
-         border:2px solid grey;
-         border-radius: 6px;
-       }
-       #wisper{
-        display: flex;
-        justify-content: center;
-        column-gap: 20px;
-        width:100%; 
-        margin:40px;
-       }
-       #wisper > .wisp{
-        border:2px solid grey;
-        border-radius: 6px;
-       }
-
-       #para{
-        border: 2px solid blue;
-        justify-content: center;
-        /* column-gap: 20px; */
-
-       }
-       #para > p{
-        justify-content: space-around;
-       }
-
-       #bestseller{
-        display: flex;
-        justify-content: center;
-        column-gap: 20px;
-        width:100%; 
-        margin:30px;
-       }
-      #bestseller > .eye{
-        border:2px solid grey;
-        border-radius: 6px;
-      }
-      .icon{
-        margin: auto;
-        width:80%;
-        border-radius: 5px;
-      }
-      .icon > img{
-      border-radius: 10px;
-      }
-      #soft{
-        display: flex;
-        justify-content: center;
-        column-gap: 20px;
-        width:100%; 
-        margin:30px;
-      }
-      #soft > .softy{
-        border:2px solid grey;
-        border-radius: 6px;
-      }
-      #summer{
-        display:flex;
-        justify-content: center;
-        column-gap: 20px;
-        width:100%; 
-        margin:30px;
-      }
-      #summer > .sum > img{
-        border-radius: 8px;
-        border: 2px solid grey;
-      }
-      #luxe{
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        
-      }
-      #luxe > .aminu > img{
-        border:2px solid grey;
-      }
-      #influ{
-      display: flex;
-      justify-content: center;
-      column-gap: 20px;
-      width:100%; 
-      margin:15px;
-      }
-      #influ > .influencer{
-        border-radius: 8px;
-        border: 2px solid grey;
-      }
-      #lipstick{
-      display: flex;
-      justify-content: center;
-      column-gap: 20px;
-      width:100%; 
-      margin:15px;
-      }
-      #lipstick > .lips{
-        border-radius: 8px;
-        border: 2px solid grey;
-      }
-      #explore{
-        display: flex;
-        margin: auto;
-        justify-content: center;
-      }
-      #editor{
-      display: flex;
-      justify-content: center;
-      column-gap: 20px;
-      width:100%; 
-      margin:15px;
-      }
-      #editor > .edit{
-        border-radius: 8px;
-        border: 2px solid grey;
-      }
-      #game{
-        display: flex;
-        margin: auto;
-        justify-content: center;
-       
-      }
-      #game > img{
-        border:2px solid grey;
-        border-radius: 10px;
-      }
-      #gif{
-      display: flex;
-      justify-content: center;
-      column-gap: 20px;
-      width:100%; 
-      margin:15px;
-      }
-      #gif > .gift{
-        border-radius: 8px;
-        border: 2px solid grey;
-      }
-      #flower{
-      display: flex;
-      justify-content: center;
-      column-gap: 20px;
-      width:100%; 
-      margin:15px;
-      }
-      #flower > .offerings{
-        border-radius: 8px;
-        border: 2px solid grey;
-
-      }
-      #pop{
-      display: flex;
-      justify-content: center;
-      column-gap: 20px;
-      width:100%; 
-      margin:15px;
-      }
-      #pop > .tech{
-     border-radius:8px;
-     border:2px solid grey;
-
-      }
-      #sport{
-       display: flex;
-      justify-content: center;
-      column-gap: 20px;
-      width:100%; 
-      margin:25px;
-      }
-      #sport > .wear{
-     border-radius:8px;
-     border:2px solid grey;
-      }
-    #beauty{
-      display: flex;
-      justify-content: center;
-      column-gap: 20px;
-      width:100%; 
-      margin:15px;
-    }
-    #beauty > .tv{
-     border-radius:8px;
-     border:2px solid grey;
-    }
-    footer{
-    display: flex;
-    justify-content: space-around;
-
-    }
-    footer > #footer-1 > img{
-      margin-top: 30px;
-
-    }
-    footer > #footer-1 > button{
-      margin-left: 20px;
-    }
-    footer > #footer-2 > img{
-      margin-top: 30px;
-    }
-    </style>
+     <link rel="stylesheet" href="index.css">
 </head>
 <body>
      <header>
         <div class="nav-1">
-      
-    <p>BEAUTY BANANZA Get Your Daily DOse Of Amazing Deals</p>
-   
-            <a href="www.google.com">
+<p>BEAUTY BANANZA Get Your Daily DOse Of Amazing Deals</p>
+<a href="www.google.com">
          <img style="height:50px;" src="https://th.bing.com/th?q=Cell+Phone+Icon+Clip+Art&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247">
            <span class="nav-top-link"> Get App</span></a>
-
-            <a href="www.google.com">
+<a href="www.google.com">
             <img style="height:50px" src="https://th.bing.com/th/id/OIP.x4jxoevb-PWvhs_mf894cwHaH0?w=194&h=204&c=7&r=0&o=5&dpr=1.3&pid=1.7">
             <span class="nav-top-link"> Store & Events</span></a>
-        
-            <a href="www.google.com">
+        <a href="www.google.com">
             <img style="height:50px" src="https://th.bing.com/th?q=Gift+Box+Icon.png&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247">
             <span class="nav-top-link">Gift Card</span></a>
-        
-            <a href="www.google.com">
+        <a href="www.google.com">
             <img style="height:50px" src="https://th.bing.com/th/id/OIP.3JpFam4YU6Ki1Yn7QYsa7AHaHa?w=208&h=208&c=7&r=0&o=5&dpr=1.3&pid=1.7">
             <span class="nav-top-link">Help</span></a>
          </div>
-
-
-
    <div class="nav-2">
     <div class="ny">
     <img style="height:90px;width:100px;"src="https://th.bing.com/th/id/OIP.77jQU0b1sWpB-ojX3yOHhAHaHa?w=169&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"></div>
@@ -408,15 +34,11 @@
    <a href="www.google.com">Beauty Advice</a> 
    
   <h1>search</h1>
-  <button style="height:40px; margin-top: 20px;">sign up</button>
+  <button onclick="window.location.href = 'signup.html'" style="height:40px; margin-top: 20px;">sign up/login</button>
   <div id="nyy3"> 
      <img style="height:40px; margin-top: 20px;" src="https://th.bing.com/th/id/OIP.Qu3PNyL59Cnh7izuMG3VTAHaHa?w=163&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"></div>
   </div>
    </div>
-
-
-
-
 <div class="nav-3">
 <p>Makeup</p>
 <p>skin</p>
@@ -434,55 +56,37 @@
 </div>
 </div>
    </header>
-
-
 <h1>Best In Beauty</h1>
    <div id="top">
     <div id="img1">
 <img src="https://images-static.nykaa.com/uploads/5e89d38c-6072-407a-a96a-1cca184fc851.jpg?tr=w-600,cm-pad_resize">
     </div>
-
-    <div id="img1">
+<div id="img1">
 <img src="https://images-static.nykaa.com/uploads/37545038-91e8-40be-ad77-91963ee1bc44.jpg?tr=w-600,cm-pad_resize">
     </div>
-
     <div id="img1">
 <img src="https://images-static.nykaa.com/uploads/1046e0bb-71a6-4b03-98f0-e0f70649e199.jpg?tr=w-600,cm-pad_resize">
     </div>
  </div>
-
-
-
-
  <div id="middle">
-
 <div id="img2">
 <img src="https://images-static.nykaa.com/uploads/4c95d618-9c55-4422-a965-1fca416bab14.jpg?tr=w-600,cm-pad_resize" alt="error"></div>
-
 <div id="img2">
 <img src="https://images-static.nykaa.com/uploads/0f4a8148-77b5-4eb0-9cdc-0c6671808ee9.jpg?tr=w-600,cm-pad_resize" alt="error" margin-left="30px"></div>
 
 </div>
-
-
-
 <h1>First Purchase App Offers</h1>
-
 <div id="img3">
     <img style="border-radius:9px;" src="https://images-static.nykaa.com/uploads/feec8cd8-5d60-4312-95e2-33125b7bace0.jpg?tr=w-1200,cm-pad_resize"></div>
-
-
-
 <h1>Top Brands</h1>
 
 <div id="middle-2">
-
-    <div class="img4">
+<div class="img4">
     <img src="https://images-static.nykaa.com/uploads/20a2054e-3a96-4e51-b2d7-39b5611c6814.jpg?tr=w-400,cm-pad_resize" alt="">
     <h1>Up To 10% On Bestseller!</h1>
     <p>Buy 2 Get 10% Off + Free Mini On ₹1000+</p></div>
  
-    <div class="img4">
+<div class="img4">
         <img src="https://images-static.nykaa.com/uploads/bc6eb48e-9cb3-42a9-8378-c5219dc6d9a3.jpg?tr=w-400,cm-pad_resize" alt="">
         <h1>Up To 30% Off</h1>
         <p>On Entire Range</p></div>
@@ -492,16 +96,12 @@
         <h1>UP to 20% off</h1>
         <p>Expert Care For All Types Of Hairs!</p></div>
 
-
-
-
-
 <div class="img4">
     <img src="https://images-static.nykaa.com/uploads/8fe873f4-52a5-4b09-83ae-92cdd25af47c.png?tr=w-400,cm-pad_resize" alt="">
     <h1>Flat 30% off!</h1>
     <p>Hair oils, shampoos & masks</p></div>
  
-    <div class="img4">
+<div class="img4">
         <img src="https://images-static.nykaa.com/uploads/9487a111-adb9-4bae-a009-81c5b689189a.jpg?tr=w-400,cm-pad_resize" alt="">
         <h1>Professional hair serumsstarting at 680/-</h1>
         <p>free bestsellers hair mask mini on 1499/-</p></div>
@@ -510,28 +110,20 @@
         <img src="https://images-static.nykaa.com/uploads/834c81d9-991d-42d3-b1d0-2191754f151d.jpg?tr=w-400,cm-pad_resize" alt="">
         <h1>Up to 14% off </h1>
         <p>ON entire range</p></div>
-
-
-
-
-        <div class="img4">
+<div class="img4">
             <img src="https://images-static.nykaa.com/uploads/63340230-4ae1-4b7d-9b08-c4657632656f.png?tr=w-400,cm-pad_resize" alt="">
             <h1>Up to 20% off</h1>
             <p>Natural matte finish</p></div>
-         
-            <div class="img4">
+<div class="img4">
                 <img src="https://images-static.nykaa.com/uploads/a079c376-2c0e-4a0a-ad97-ee55bab96ccb.jpg?tr=w-400,cm-pad_resize" alt="">
                 <h1>Luxe starting at 1150/-</h1>
                 <p>Exciting gift on purchase</p></div>
-              
-        <div class="img4">
+<div class="img4">
                 <img src="https://images-static.nykaa.com/uploads/bd61e53b-cd4d-4fb5-984e-1c31d9e05911.jpg?tr=w-400,cm-pad_resize" alt="">
                 <h1>Global Best-sellers</h1>
                 <p>That Mkae For A Perfect Gift </p></div>
 
 </div>
-
-
 <div id="dry-buy">
     <div class="two-dry-buy">
 <img src="https://images-static.nykaa.com/uploads/12ea9993-f29d-4732-aa66-2de20275f641.jpg?tr=w-600,cm-pad_resize">
@@ -540,7 +132,6 @@
     <img src="https://images-static.nykaa.com/uploads/c7ae3973-167e-4ce1-b572-1364e1f5c2e2.jpg?tr=w-600,cm-pad_resize" alt="">    
     </div>
 </div>
-
 
 <h1>Only At Nykaa</h1>
 <div id="golas">
@@ -560,26 +151,11 @@
 
 <div id="box-5">
 <div class="boxi"><img src="https://images-static.nykaa.com/creatives/0a3cf7a9-db95-4b9f-8687-d9183fa572e3/default.png?tr=w-240,cm-pad_resize"><h2>Up to 30% off!</h2><p>Free shampoo at 799/-</p></div>
-
 <div class="boxi"><img src="https://images-static.nykaa.com/creatives/dcdfbb1b-b822-47b5-9ef4-ab79084e9478/default.jpg?tr=w-240,cm-pad_resize"><h2>ON all Orders</h2><p>3 Peice body care kit</p></div>
-
 <div class="boxi"><img src="https://images-static.nykaa.com/creatives/a3acf4fa-c2e0-44b8-ae11-da106678acd0/default.png?tr=w-240,cm-pad_resize"><h2>Up to 20% off!</h2><p>Free shampoo at 700/-</p></div>
-
 <div class="boxi"><img src="https://images-static.nykaa.com/creatives/e04e0cb8-da41-4529-ad1d-e6bbc8456b1d/default.jpg?tr=w-240,cm-pad_resize"><h2>Up to 50% off!</h2><p>Soft and Comfy bras</p></div>
-
 <div class="boxi"><img src="https://images-static.nykaa.com/creatives/a6d5659f-493a-46cf-b4c6-d54cd64ca971/default.jpg?tr=w-240,cm-pad_resize"><h2>On 4500/-</h2><p></p>3-Piece set + 2 Gifts</div>
 </div>
-
-<!-- <h1>New At Nykaa</h1>
-<div id="bottles"></div>
-<div class="bottle"><img src=""></div>
-<div class="bottle"><img src="https://th.bing.com/th/id/OIP.9KGz8aZ6Uo8elHjlE7h4PQHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"></div>
-<div class="bottle"><img src=""></div>
-<div class="bottle"><img src=""></div>
-<div class="bottle"><img src=""></div>
-<div class="bottle"><img src=""></div>
-<div class="bottle"><img src=""></div> -->
-
 
 <h1>Trending-10</h1>
 <div id="trend">
@@ -591,125 +167,74 @@
 </div>
 
 <h1>Featured Brands</h1>
-<div id="pampers">
-    <div class="pamp"><img src="https://images-static.nykaa.com/creatives/101c9f0b-ed9c-43a7-af08-11f2f177fcb1/default.jpg?tr=w-240,cm-pad_resize"><h4>Free Serum</h4><p>worth 249 on 599</p></div>
-
-    <div class="pamp"><img src="https://images-static.nykaa.com/creatives/02203eed-4b82-4c73-a604-055efef675c7/default.jpg?tr=w-240,cm-pad_resize"><h4>Up to 20% off</h4><p>On entire range</p></div>
-
-    <div class="pamp"><img src="https://images-static.nykaa.com/creatives/3382cb9a-dc49-4dd8-9d51-6c8c509bc30c/default.png?tr=w-240,cm-pad_resize"><h4>Up to 20% off</h4><p>Free serum on 299</p></div>
-
-    <div class="pamp"><img src="https://images-static.nykaa.com/creatives/9fdb6201-2601-45d4-bb36-76252262e237/default.jpg?tr=w-240,cm-pad_resize"><h4>Up to 28% off</h4><p>Buy 2, Pick 2 Minis</p></div>
-
-    <div class="pamp"><img src="https://images-static.nykaa.com/creatives/24527d7f-eb07-4273-ac4d-d704e4f48454/default.jpg?tr=w-240,cm-pad_resize"><h4>Up to 30% off!</h4><p>On Best Sellers</p></div>
+<div id="pampers"><div class="pamp"><img src="https://images-static.nykaa.com/creatives/101c9f0b-ed9c-43a7-af08-11f2f177fcb1/default.jpg?tr=w-240,cm-pad_resize"><h4>Free Serum</h4><p>worth 249 on 599</p></div>
+<div class="pamp"><img src="https://images-static.nykaa.com/creatives/02203eed-4b82-4c73-a604-055efef675c7/default.jpg?tr=w-240,cm-pad_resize"><h4>Up to 20% off</h4><p>On entire range</p></div>
+<div class="pamp"><img src="https://images-static.nykaa.com/creatives/3382cb9a-dc49-4dd8-9d51-6c8c509bc30c/default.png?tr=w-240,cm-pad_resize"><h4>Up to 20% off</h4><p>Free serum on 299</p></div>
+<div class="pamp"><img src="https://images-static.nykaa.com/creatives/9fdb6201-2601-45d4-bb36-76252262e237/default.jpg?tr=w-240,cm-pad_resize"><h4>Up to 28% off</h4><p>Buy 2, Pick 2 Minis</p></div>
+<div class="pamp"><img src="https://images-static.nykaa.com/creatives/24527d7f-eb07-4273-ac4d-d704e4f48454/default.jpg?tr=w-240,cm-pad_resize"><h4>Up to 30% off!</h4><p>On Best Sellers</p></div>
 </div>
-<!-- can be added one more as i skipped -->
 
-<div id="matrix">
-    <div class="mat"><img src="https://images-static.nykaa.com/creatives/77b46862-2063-4f20-a18e-f7bc2bded858/default.png?tr=w-400,cm-pad_resize"><h4>Used by 1,00,000+ hairstyles</h4><p>Free biologe serum mini 0n 699/-</p></div>
-
-    <div class="mat"><img src="https://images-static.nykaa.com/creatives/616f593d-6765-4d9d-a5d5-f46d3b6ac016/default.jpg?tr=w-400,cm-pad_resize"><h4>Rebuilds Broken Hair Bonds</h4><p>& prevent breakage</p></div>
-
-    <div class="mat"><img src="https://images-static.nykaa.com/creatives/1a257a31-c08e-40c6-944f-8ad914d73393/default.jpg?tr=w-400,cm-pad_resize"><h4>Refresh Hair Between Washes</h4><p>Flat 15% off + combos @20% off</p></div>
+<div id="matrix"><div class="mat"><img src="https://images-static.nykaa.com/creatives/77b46862-2063-4f20-a18e-f7bc2bded858/default.png?tr=w-400,cm-pad_resize"><h4>Used by 1,00,000+ hairstyles</h4><p>Free biologe serum mini 0n 699/-</p></div>
+<div class="mat"><img src="https://images-static.nykaa.com/creatives/616f593d-6765-4d9d-a5d5-f46d3b6ac016/default.jpg?tr=w-400,cm-pad_resize"><h4>Rebuilds Broken Hair Bonds</h4><p>& prevent breakage</p></div>
+<div class="mat"><img src="https://images-static.nykaa.com/creatives/1a257a31-c08e-40c6-944f-8ad914d73393/default.jpg?tr=w-400,cm-pad_resize"><h4>Refresh Hair Between Washes</h4><p>Flat 15% off + combos @20% off</p></div>
 </div>
 
 
-<div id="the-three">
-    <div class="one"><img src="https://images-static.nykaa.com/creatives/6bc02874-7626-4fc5-92c4-6e1c0994933c/default.jpg?tr=w-240,cm-pad_resize"><h4>Up to 30% off</h4><p>On entire range</p></div>
-
-    <div class="one"><img src="https://images-static.nykaa.com/creatives/0521d809-56e0-485c-95ed-a287d11c357c/default.jpg?tr=w-240,cm-pad_resize"><h4>25% on singles</h4><p>30% on combos</p></div>
-
-    <div class="one"><img src="https://images-static.nykaa.com/creatives/3382cb9a-dc49-4dd8-9d51-6c8c509bc30c/default.png?tr=w-240,cm-pad_resize"><h4>Up to 20% off</h4><p>Free serum on 999/-</p></div>
+<div id="the-three"><div class="one"><img src="https://images-static.nykaa.com/creatives/6bc02874-7626-4fc5-92c4-6e1c0994933c/default.jpg?tr=w-240,cm-pad_resize"><h4>Up to 30% off</h4><p>On entire range</p></div>
+<div class="one"><img src="https://images-static.nykaa.com/creatives/0521d809-56e0-485c-95ed-a287d11c357c/default.jpg?tr=w-240,cm-pad_resize"><h4>25% on singles</h4><p>30% on combos</p></div>
+<div class="one"><img src="https://images-static.nykaa.com/creatives/3382cb9a-dc49-4dd8-9d51-6c8c509bc30c/default.png?tr=w-240,cm-pad_resize"><h4>Up to 20% off</h4><p>Free serum on 999/-</p></div>
 </div>
 
 
-<div id="wisper">
-    <div class="wisp"><img src="https://images-static.nykaa.com/creatives/5306e04e-a28c-4def-af0a-8aa5417eaae9/default.jpg?tr=w-400,cm-pad_resize"><h4>Flat 15% On Sahascalp Serum</h4><p>Iconic Hair & Scalp duo</p></div>
-
-    <div class="wisp"><img src="https://images-static.nykaa.com/creatives/9009dc95-e0d0-46f0-9d2d-0047a14b4b4b/default.jpg?tr=w-400,cm-pad_resize"><h4>Upto 35% Off </h4><p>For comfortable Days & Nights!</p></div>
-
-    <div class="wisp"><img src="https://images-static.nykaa.com/creatives/9d1ee161-39a7-4cf1-b12d-fc38205e6774/default.jpg?tr=w-400,cm-pad_resize"><h4>Dream Duo For Acne-Free Skin</h4><p>3 Samples On All + Kit On 1600</p></div>
+<div id="wisper"><div class="wisp"><img src="https://images-static.nykaa.com/creatives/5306e04e-a28c-4def-af0a-8aa5417eaae9/default.jpg?tr=w-400,cm-pad_resize"><h4>Flat 15% On Sahascalp Serum</h4><p>Iconic Hair & Scalp duo</p></div>
+ <div class="wisp"><img src="https://images-static.nykaa.com/creatives/9009dc95-e0d0-46f0-9d2d-0047a14b4b4b/default.jpg?tr=w-400,cm-pad_resize"><h4>Upto 35% Off </h4><p>For comfortable Days & Nights!</p></div>
+<div class="wisp"><img src="https://images-static.nykaa.com/creatives/9d1ee161-39a7-4cf1-b12d-fc38205e6774/default.jpg?tr=w-400,cm-pad_resize"><h4>Dream Duo For Acne-Free Skin</h4><p>3 Samples On All + Kit On 1600</p></div>
 </div>
 
 <h1>Best-sellers</h1>
-
-<div id="bestseller">
-   <div class="eye"><button>BESTSELLER</button><img src="https://th.bing.com/th/id/OIP.p4A5NJLoLGC-1aElDXBGeAHaJ4?w=136&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"><p>Nykaa Cosmetics eyes on me!</p></div>
-
-   <div class="eye"><button>BESTSELLER</button><img src="https://th.bing.com/th/id/OIP.22etzPa7EF1Xa8j-rhNfEgHaHa?w=189&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"><p>Rose water </p></div>
-
-   <div class="eye"><button>BESTSELLER</button><img src="https://th.bing.com/th/id/OIP.T3ZfFw62KvLWycPNP6WePAHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"><p>Dot & Key Cica Niacimide Night Gel!</p></div>
-
-   <div class="eye"><button>BESTSELLER</button><img src="https://th.bing.com/th/id/OIP.bx5DTyAtM-BoD-d37WiG_QHaHa?w=192&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7"><p>Smashbox Halo Healthy Glow All-in-tinted</p></div>
-
-   <div class="eye"><button>BESTSELLER</button><img src="https://th.bing.com/th/id/OIP.T2uqF9kOmFWAvNASP3C6SwHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"><p>Nevia Body-lotion</p></div>
+<div id="bestseller"><div class="eye"><button>BESTSELLER</button><img src="https://th.bing.com/th/id/OIP.p4A5NJLoLGC-1aElDXBGeAHaJ4?w=136&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"><p>Nykaa Cosmetics eyes on me!</p></div>
+<div class="eye"><button>BESTSELLER</button><img src="https://th.bing.com/th/id/OIP.22etzPa7EF1Xa8j-rhNfEgHaHa?w=189&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"><p>Rose water </p></div>
+<div class="eye"><button>BESTSELLER</button><img src="https://th.bing.com/th/id/OIP.T3ZfFw62KvLWycPNP6WePAHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"><p>Dot & Key Cica Niacimide Night Gel!</p></div>
+<div class="eye"><button>BESTSELLER</button><img src="https://th.bing.com/th/id/OIP.bx5DTyAtM-BoD-d37WiG_QHaHa?w=192&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7"><p>Smashbox Halo Healthy Glow All-in-tinted</p></div>
+<div class="eye"><button>BESTSELLER</button><img src="https://th.bing.com/th/id/OIP.T2uqF9kOmFWAvNASP3C6SwHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"><p>Nevia Body-lotion</p></div>
 
 </div>
-
 
 <h1>Everyday Essentials</h1>
-
 <div class="icon"><img src="https://images-static.nykaa.com/uploads/2adda7a5-567a-4db1-b408-06c96be60287.jpg?tr=w-1200,cm-pad_resize"></div>
 </div>
-
-
 <div id="soft">
-    <div class="softy"><img src="https://images-static.nykaa.com/uploads/c59db0d6-872e-4fd1-bc64-8331897b3965.jpg?tr=w-240,cm-pad_resize"><h3>MOistures</h3></div>
-
-    <div class="softy"><img src="https://images-static.nykaa.com/uploads/8f8b55d5-0bfc-4545-ba05-df0177672474.jpg?tr=w-240,cm-pad_resize"><h3>Bath & Body</h3></div>
-
-    <div class="softy"><img src="https://images-static.nykaa.com/uploads/aff3b609-5b3e-4d8c-8ccb-ad9157824b2d.jpg?tr=w-240,cm-pad_resize"><h3>Face Washes</h3></div>
-
-    <div class="softy"><img src="https://images-static.nykaa.com/uploads/e3424d3e-3c6f-4dd2-9cd3-d9ce46570133.jpg?tr=w-240,cm-pad_resize"><h3>Budget Make-up</h3></div>
-
-    <div class="softy"><img src="https://images-static.nykaa.com/uploads/4bec33e3-9145-442b-9171-308834402eb3.jpg?tr=w-240,cm-pad_resize"><h3>Value combo</h3></div>
+<div class="softy"><img src="https://images-static.nykaa.com/uploads/c59db0d6-872e-4fd1-bc64-8331897b3965.jpg?tr=w-240,cm-pad_resize"><h3>MOistures</h3></div>
+<div class="softy"><img src="https://images-static.nykaa.com/uploads/8f8b55d5-0bfc-4545-ba05-df0177672474.jpg?tr=w-240,cm-pad_resize"><h3>Bath & Body</h3></div>
+ <div class="softy"><img src="https://images-static.nykaa.com/uploads/aff3b609-5b3e-4d8c-8ccb-ad9157824b2d.jpg?tr=w-240,cm-pad_resize"><h3>Face Washes</h3></div>
+<div class="softy"><img src="https://images-static.nykaa.com/uploads/e3424d3e-3c6f-4dd2-9cd3-d9ce46570133.jpg?tr=w-240,cm-pad_resize"><h3>Budget Make-up</h3></div>
+<div class="softy"><img src="https://images-static.nykaa.com/uploads/4bec33e3-9145-442b-9171-308834402eb3.jpg?tr=w-240,cm-pad_resize"><h3>Value combo</h3></div>
 </div>
 
-
 <h1>Categories In Focus</h1>
-
 <div id="summer">
     <div class="sum"><img src="https://images-static.nykaa.com/uploads/44072d2f-23f8-4739-9b04-69a59237dbdf.jpg?tr=w-600,cm-pad_resize"></div>
-
     <div class="sum"><img src="https://images-static.nykaa.com/uploads/ab85a7e4-930a-47e3-b59f-0952592e9dc8.jpg?tr=w-600,cm-pad_resize">
 </div>
 </div>
 
-
 <h1>Brands You Can't Miss</h1>
-
 <div id="luxe">
-    
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/2dbfa467-aa5d-4349-a1cb-6e7d1461617f/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/1b5af6fa-f159-4fea-8136-e9631b30aec1/default.png?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/fdf8277d-4d18-4f4f-b208-be220bbc23a1/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/0a6e28a6-8db0-4c9f-9df1-5065cc43911c/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/d3027087-db25-443e-b58a-e4c2f309aff1/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-   
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/aa7590bf-ebd8-412b-a6cf-663f05450cd9/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/ed8f6bb0-9abf-4fe1-ac3b-727330bf1465/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/3a1b3285-68ad-4e21-8681-8b507c3666a7/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/cfe9c92e-de64-4ca7-bb58-738aff7cf1bb/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/55ba582b-08fa-4f03-9831-f0431f464eb6/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/63f6109b-cd37-43ea-b85a-4ed22740df52/default.jpeg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/92cd4fc5-658f-4986-b64a-bab1c2394fd4/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/d4fb310c-e6a9-4614-a220-0b6bf4b84d3f/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/4dc78bb8-ae11-4824-9d6f-45e71ec56cf5/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
-
-    <div class="aminu"><img src="https://images-static.nykaa.com/creatives/21aad883-3edc-451f-b759-c1fea6afa704/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/2dbfa467-aa5d-4349-a1cb-6e7d1461617f/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/1b5af6fa-f159-4fea-8136-e9631b30aec1/default.png?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/fdf8277d-4d18-4f4f-b208-be220bbc23a1/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/0a6e28a6-8db0-4c9f-9df1-5065cc43911c/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/d3027087-db25-443e-b58a-e4c2f309aff1/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/aa7590bf-ebd8-412b-a6cf-663f05450cd9/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/ed8f6bb0-9abf-4fe1-ac3b-727330bf1465/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/3a1b3285-68ad-4e21-8681-8b507c3666a7/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/cfe9c92e-de64-4ca7-bb58-738aff7cf1bb/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/55ba582b-08fa-4f03-9831-f0431f464eb6/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>   
+ <div class="aminu"><img src="https://images-static.nykaa.com/creatives/63f6109b-cd37-43ea-b85a-4ed22740df52/default.jpeg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/92cd4fc5-658f-4986-b64a-bab1c2394fd4/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/d4fb310c-e6a9-4614-a220-0b6bf4b84d3f/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/4dc78bb8-ae11-4824-9d6f-45e71ec56cf5/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
+<div class="aminu"><img src="https://images-static.nykaa.com/creatives/21aad883-3edc-451f-b759-c1fea6afa704/default.jpg?tr=w-240,cm-pad_resize"><h4></h4><p></p></div>
 </div>
 </div>
 
@@ -718,50 +243,24 @@
 <p>What Your Favorites Love</p>
 <div id="influ">
 <div class="influencer"><img src="https://images-static.nykaa.com/uploads/953b18be-4927-4626-a1e4-3d0dafc17030.jpg?tr=w-300,cm-pad_resize"><h3>Prableen's</h3><p>Glam Look Essential's</p></div>
-
 <div class="influencer"><img src="https://images-static.nykaa.com/uploads/1e1a9472-ebd8-41f7-9cfa-aece5d315a4b.jpg?tr=w-300,cm-pad_resize"><h3>Muskan's</h3><p>Luxe Fav's</p></div>
-
 <div class="influencer"><img src="https://images-static.nykaa.com/uploads/33d7642a-0b80-4061-9dcc-d1b481c464cb.jpg?tr=w-300,cm-pad_resize"><h3>Hina Khan's</h3><p>Date Night Makeup Store</p></div>
-
 <div class="influencer"><img src="https://images-static.nykaa.com/uploads/83fb130a-b9b8-400d-b5e1-181d8b882c10.jpg?tr=w-300,cm-pad_resize"><h3>Gia Kashyap's</h3><p>Summer Skincare Bffs</p></div>
 </div>
-
 
 <h1>Buying Guides</h1>
 <div id="lipstick">
     <div class="lips"><img src="https://images-static.nykaa.com/uploads/02b7a349-e77a-468d-b1a6-ac9c39d307b8.jpg?tr=w-400,cm-pad_resize"><h4>Finf Your Perfect Lipstick Match</h4></div>
-
     <div class="lips"><img src="https://images-static.nykaa.com/uploads/18190b57-d985-4247-b638-e0e2f8199e72.jpg?tr=w-400,cm-pad_resize"><h4>Trends And Hacks To Up Your Beauty Game</h4></div>
-
     <div class="lips"><img src="https://images-static.nykaa.com/uploads/680d6993-10fa-469f-a1cc-c260ad5f92af.jpg?tr=w-400,cm-pad_resize"><h4>KIck Start Your wellness Journey</h4></div>
 </div>
-
-
 
 <div id="explore">
     <img src="https://images-static.nykaa.com/uploads/f4c3f4d7-a236-4e7a-92f8-e5ba0417c05e.png?tr=w-1200,cm-pad_resize">
 </div>
 
-<h1>Editor's Choice</h1>
-
-<div id="editor">
-    <div class="edit"><img src="https://images-static.nykaa.com/uploads/3417d226-90f5-4809-b9e9-1f8a5f51661e.jpg?tr=w-240,cm-pad_resize"><h4>Hair Detox</h4></div>
-
-    <div class="edit"><img src="https://images-static.nykaa.com/uploads/c8dd7016-e20a-4461-8073-f6db08a71e8e.jpg?tr=w-240,cm-pad_resize"><h4>Indian Ingrediants For Skincare</h4></div>
-
-    <div class="edit"><img src="https://images-static.nykaa.com/uploads/9b9035e2-8da6-4f78-bcda-1e4e0fb5a5d7.jpg?tr=w-240,cm-pad_resize"><h4>Travel Essentials</h4></div>
-
-    <div class="edit"><img src="https://images-static.nykaa.com/uploads/7145a7a0-32e4-49c0-8908-a8e39f5237c9.jpg?tr=w-240,cm-pad_resize"><h4>Consious Care For You</h4></div>
-
-    <div class="edit"><img src="https://images-static.nykaa.com/uploads/df1084e6-c191-4ffd-9797-b98368016b93.jpg?tr=w-240,cm-pad_resize"></div>
-
-</div>
-
 <h3>Game Zone</h3><p>Play & Win</p>
-
 <div id="game"><img src="https://images-static.nykaa.com/uploads/864a6373-b497-4e51-918c-0745dff89f94.jpeg?tr=w-1200,cm-pad_resize"></div>
-
-
 <h2>Gifting at Nykaa</h2>
 <p>Give The Present of Beauty</p>
 <div id="gif">
@@ -770,46 +269,29 @@
 </div>
 </div>
 
-
 <h2>Discover More at Nykaa</h2>
 <p>Special Offerings</p>
-
-<div id="flower">
-    <div class="offerings"><img src="https://images-static.nykaa.com/uploads/6187c351-5e80-4727-9005-5ee34c5b4ed7.jpg?tr=w-400,cm-pad_resize"><h4>Coveted Niche Brands For You</h4></div>
-
-    <div class="offerings"><img src="https://images-static.nykaa.com/uploads/722cbc0f-ca72-47a8-baa3-ecec4522eaf0.jpg?tr=w-400,cm-pad_resize"><h4>Celebrating Indian Homegrown Brands</h4></div>
-
-    <div class="offerings"><img src="https://images-static.nykaa.com/uploads/166b6a37-02dc-4ec0-a28b-3495a4982c56.jpg?tr=w-400,cm-pad_resize"><h4>Exciting Brands And Latest Launches</h4></div>
+<div id="flower"><div class="offerings"><img src="https://images-static.nykaa.com/uploads/6187c351-5e80-4727-9005-5ee34c5b4ed7.jpg?tr=w-400,cm-pad_resize"><h4>Coveted Niche Brands For You</h4></div>
+<div class="offerings"><img src="https://images-static.nykaa.com/uploads/722cbc0f-ca72-47a8-baa3-ecec4522eaf0.jpg?tr=w-400,cm-pad_resize"><h4>Celebrating Indian Homegrown Brands</h4></div>
+<div class="offerings"><img src="https://images-static.nykaa.com/uploads/166b6a37-02dc-4ec0-a28b-3495a4982c56.jpg?tr=w-400,cm-pad_resize"><h4>Exciting Brands And Latest Launches</h4></div>
 </div>
-
 
 <h2>Pop-up Stores</h2>
 <p>From Nykaa Fashion</p>
-
 <div id="pop">
     <div class="tech"><img src="https://images-static.nykaa.com/uploads/4d3cb1c9-7d69-4f72-94c1-a9d9dafba43f.jpg?tr=w-600,cm-pad_resize"><h2>Up to 70% off</h2><p>All Things we love beyond beauty</p></div> 
-
-    <div class="tech"><img src="https://images-static.nykaa.com/uploads/b1faf62c-184c-47a9-bd7a-c6b3b891b0ae.jpg?tr=w-600,cm-pad_resize">
+<div class="tech"><img src="https://images-static.nykaa.com/uploads/b1faf62c-184c-47a9-bd7a-c6b3b891b0ae.jpg?tr=w-600,cm-pad_resize">
         <h2>Up to 70% off</h2><p>Top-rated and best-selling gadgets</p></div>
 </div>
 
-
-
 <div id="sport">
 <div class="wear"><img src="https://images-static.nykaa.com/uploads/b644ab1a-c5c9-4a47-b56b-dc6d5331ce18.jpg?tr=w-200,cm-pad_resize"><h3>Up to 60% off</h3></div>
-
 <div class="wear"><img src="https://images-static.nykaa.com/uploads/426447f2-0d58-49d1-801b-63286520c79c.jpg?tr=w-200,cm-pad_resize"><h3>Up to 70% off</h3></div>
-
 <div class="wear"><img src="https://images-static.nykaa.com/uploads/77311d05-f979-431f-ba86-7b5087395ed2.jpg?tr=w-200,cm-pad_resize"><h3>Up to 70% off</h3></div>
-
 <div class="wear"><img src="https://images-static.nykaa.com/uploads/fb3a11cc-c83f-4578-bfff-a70d95140fbf.jpg?tr=w-200,cm-pad_resize"><h3>Up to 70% off</h3></div>
-
 <div class="wear"><img src="https://images-static.nykaa.com/uploads/541f6e34-9aa6-4f36-9185-d26c62a03f4d.jpg?tr=w-200,cm-pad_resize"><h3>Up to 70% off</h3></div>
-
 <div class="wear"><img src="https://images-static.nykaa.com/uploads/c8357a6d-5670-4c92-bffd-499e63d8fece.jpg?tr=w-200,cm-pad_resize"><h3>Up to 60% off</h3></div>
 </div>
-
-
 
 <h2>Beauty Advice</h2>
 <p>Discover LAtest Tips & Tricks</p>
@@ -818,59 +300,168 @@
     <div class="tv"><img src="https://images-static.nykaa.com/uploads/71c7558d-637c-40ee-b09b-7dfda35cf125.jpg?tr=w-600,cm-pad_resize"></div>
     <div class="tv"><img src="https://images-static.nykaa.com/uploads/e7c366df-a513-4932-9cdc-fbeda4a707a5.jpg?tr=w-600,cm-pad_resize"></div>
 </div>
-
-
 <div id="foot">
     <img src="https://images-static.nykaa.com/uploads/49e43a50-37b5-405a-be2d-ab90055115ec.jpg?tr=w-1200,cm-pad_resize">
 </div>
-
-
-<div id="para"><p>Please be careful of fraudlent calls & msgs! Nykaa will never call you with offers pertaining to free giftsor prizes or ask for payments through links</p></div>
-
-
-
+</div>
 <footer>
-<div id="footer-1">
-
-<p><img style="height:40px"src="https://th.bing.com/th?q=Simple+Email+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247">Get Special Discount On Your Box</p>
-
-<span><u>Your email</u></span><button>SEND</button>
-
-</div>
-<div id="footer-2">
-
-<a href="www.google.com"><img src="https://th.bing.com/th?q=Online+Mobile+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" height="40px">EXPERIENCE THE NYKAA MOBILE APP</a>
-</div>
-
-<div id="footer-3">
-
-  <a href="www.google.com"><img src="https://th.bing.com/th/id/OIP.Nt9CP3uMFkovVHZbHfCimgHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="40px">FOR ANY HELP, YOU MAY CALL US AT
-    1800-267-4444<br>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</a>
-</div>
-
-</div>
-
-<div id="mid-footer">
-<div class="midi">
-  <a href="www.google.com">Who are we?</a>
-  <a href="www.google.com">Careers</a>
-  <a href="www.google.com">Authencticity</a>
-  <a href="www.google.com">Press</a>
-  <a href="www.google.com">Testimonals</a>
-  <a href="www.google.com">Nykaa Csr</a>
-  <a href="www.google.com">Responsible discloser</a>
-  <a href="www.google.com">Invester Relation</a>
-</div>
-
-<div class="midi"><a href=""></a></div>
-
-<div class="midi"><a href=""></a></div>
-
-<div class="midi"><a href=""></a></div>
-
-<div class="midi"><a href=""></a></div>
-
-</div>
-</footer>
+  <div class="fotter_sec1">
+      <div class="details_boxes">
+          <div class="bx1">
+              <ion-icon name="mail-outline" class="icons"></ion-icon>
+              <h5>Get special discount on your inbox</h5>
+          </div>
+          <div class="bx2">
+              <input type="email" name="" id="" placeholder="Your Email">
+              <button>Send</button>
+          </div>
+      </div>
+      <div class="details_boxes">
+          <div class="bx1">
+              <ion-icon name="calculator-outline" class="icons"></ion-icon>
+              <h5>EXPERIENCE THE NYKAA MOBILE APP</h5>
+          </div>
+          <div class="bx2">
+              <img src="https://o.remove.bg/downloads/65ddbb2b-2c00-4d70-a518-bb826057e0cd/images-removebg-preview.png" alt="" srcset="">
+              <img src="https://o.remove.bg/downloads/5dcbea25-b561-414f-b218-ed5c8251e2bb/images-removebg-preview.png" alt="" srcset="">
+          </div>
+      </div>
+      <div class="details_boxes">
+          <div class="bx1">
+              <ion-icon name="call-outline" class="icons"></ion-icon></ion-icon>
+              <h4>FOR ANY HELP, YOU MAY CALL US AT 1800-267-4444</h4>
+          </div>
+          <div class="bx2">
+              <p>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p>
+          </div>
+      </div>
+  </div>
+  <div class="links_sec">
+      <div class="links_boxes">
+          <ul>
+              <li>
+                  <a href="">NAYKA</a>
+                  <a href="">Who are we?</a>
+                  <a href="">Careers</a>
+                  <a href="">Authenticity</a>
+                  <a href="">Press</a>
+                  <a href="">Testimonials</a>
+                  <a href="">Nykaa CSR</a>
+                  <a href="">Responsible Disclosure</a>
+                  <a href="">Investor Relations</a> 
+              </li>
+          </ul>
+      </div>
+      <div class="links_boxes">
+          <ul>
+              <li><a href="">Help</a>
+                  <a href="">Contact Us</a>                     
+                  <a href="">Frequently asked questions</a>
+                  <a href=""> Store Locator</a>
+                  <a href="">Cancellation & Return</a>
+                  <a href="">Shipping & Delivery</a>
+                  <a href="">Sell on Nykaa</a>
+              </li>
+          </ul>
+      </div>
+      <div class="links_boxes">
+          <ul>
+              <li><a href="">Inspire Me</a>
+                  <a href="">Beauty Book</a>
+                  <a href="">Nykaa TV</a>
+                  <a href="">Nykaa Network</a>
+                  <a href="">Buying Guides</a>
+              </li>
+          </ul>
+      </div>
+      <div class="links_boxes">
+          <ul>
+              <li><a href="">Quick Links</a>
+                  <a href="">Offer Zone</a>                     
+                  <a href="">New Launches</a>
+                  <a href=""> Nykaa Man</a>
+                  <a href="">Nykaa Fashion</a>
+                  <a href="">Nykaa Pro</a>
+              </li>
+          </ul>
+      </div>
+          <div class="links_boxes">
+          <ul>
+              <li><a href="">Top Categories</a>
+                  <a href="">Makeup</a>
+                  <a href="">Skin</a>
+                  <a href="">Hair</a>
+                  <a href="">Bath & Body</a>
+                  <a href="">Appliances</a>
+                  <a href="">Mom and Baby</a>
+                  <a href="">Wellness</a>
+                  <a href="">Fragrance</a>
+                  <a href="">Natural</a>
+                  <a href="">Luxe</a>
+              </li>
+          </ul>
+          </div>
+  </div>
+  <div class="delivery_sec">
+      <div class="delivery_boxes">
+          <div class="delivery_icon">
+              <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt="" srcset="">
+          </div>
+          <div class="delivery_txt">
+              <h4>FREE SHIPPING</h4>
+              <p>On Orders Above ₹299</p>
+          </div>
+      </div>
+      <div class="delivery_boxes">
+          <div class="delivery_icon">
+              <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt="" srcset="">
+          </div>
+          <div class="delivery_txt">
+              <h4>EASY RETURNS</h4>
+              <p>15-Day Return Policy</p>
+          </div>
+      </div>
+      <div class="delivery_boxes">
+          <div class="delivery_icon">
+              <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt="" srcset="">
+          </div>
+          <div class="delivery_txt">
+              <h4>100% AUTHENTIC</h4>
+              <p>Products Sourced Directly</p>
+          </div>
+      </div>
+      <div class="delivery_boxes">
+          <div class="delivery_icon">
+              <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt="" srcset="">
+          </div>
+          <div class="delivery_txt">
+              <h4>1900+ BRANDS</h4>
+              <p>1.2 Lakh+ Products</p>
+          </div>
+      </div>
+      <div class="delivery_boxeslast">
+          <div class="delivery_lastchild">
+              <p>Show us some love ❤ on social media</p>
+              <div class="social_mediaicons">
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" alt="" srcset="">
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-facebook-filled.svg" alt="" srcset="">
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt="" srcset="">
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt="" srcset="">
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" alt="" srcset="">
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="fotter_lastsec">
+          <ul>
+             <li><a href="">Terms & Conditions</a>
+                  <a href="">Shipping Policy</a>
+                  <a href=""> Cancellation Policy</a>
+                  <a href="">Privacy Policy</a>
+              </li>
+          </ul>
+<p>© 2023 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</p>
+  </div>
+  </footer>
 </body>
 </html>
