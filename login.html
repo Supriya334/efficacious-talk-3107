@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sign up</title>
+    <title>login page</title>
     <style>
 *{
   box-sizing: border-box;
@@ -36,20 +36,40 @@ form{
         width:60%;
         justify-content: center;
         height: 20%;
+        font-size: 20px;
+        background-color: rgb(177, 177, 238);
+        border-radius: 10px;
+    }
+    form > input:hover{
+      color:rgb(139, 5, 172);
     }
     h1{
     font-family:cursive;
-    font-size:26px;
+    font-size:20px;
     margin:auto;
     margin-top: 70px;
     margin-bottom: 30px;
     text-decoration:underline;
-    color:rgb(245, 55, 125);
+    color:rgb(14, 90, 241);
+    
     }
     .nav{
       display: flex;
       padding:10px;
       
+    }
+    .nav > a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    margin:65px;
+    border: 2px solid rgb(10, 2, 2);
+    background-color: rgb(245, 196, 234);
+    width:100px;
+    border-radius: 5px;
+    }
+    .nav > a:hover{
+      color: rgb(167, 119, 240);
     }
 
 </style>
@@ -59,20 +79,20 @@ form{
     <div id="signin">
       
       <form>
-        <h1>Please Enter Your Details</h1>
+        <h1>ENTER YOUR DETAILS TO LOG-IN</h1>
         <input type="email" id="email" placeholder="Enter Your Email"/>
         <input type="password" id="password" placeholder="Enter Your Password"/>
         <input type="submit" value="Submit" />
         <div class="nav">
-          <a href="./index.html">Signup</a>
-          <a href="./signin.html">Signin</a>
+          <a href="./index.html">Login</a>
+          <a href="./signin.html">signup</a>
       </form>
     </div>
   </body>
   <script>
 
 
-  
+   
     document.querySelector("form").addEventListener("submit",userLogin)
     let userData = JSON.parse(localStorage.getItem("account-data"))|| []
     function userLogin(e){
@@ -85,9 +105,9 @@ form{
       let data = userData.find(user => user.email === email && user.password === password)
         
       if(data){
-        heading.innerText = "Sign in Successful"
+        alert("log in successfully")
       } else {
-        heading.innerText = "Wrong Credentials"
+      alert("please check your email or password")
       }
  }
 
