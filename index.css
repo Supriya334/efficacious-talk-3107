@@ -1,6 +1,6 @@
 
-        *{
-            box-sizing: border-box;
+      *{
+         box-sizing: border-box;
         }
        header{
         border:2px solid rgb(0, 255, 55);
@@ -10,27 +10,27 @@
         padding:5px;
        }
        .nav-1{
-       
         display: flex;
         flex-direction: row;
         padding-right: 40px;
         justify-content: space-around;
         height:10%;
-        border:2px solid black;
         width:100%;
-        background-color: rgb(247, 79, 107);
+        background-color: rgb(252, 94, 120);
+        box-shadow: rgba(240, 20, 20, 0.3) 0px 19px 38px, rgba(230, 10, 10, 0.22) 0px 15px 12px;
        }
+
        .nav-1 > a {
         padding:20px;
         justify-content: space-around;
         display: flex;
         align-items: center;
         text-decoration: none;
-        font-size: 14px;
-        
-       
+        font-size: 20px;
        }
-       
+       .nav-1 > a:hover {
+        color: rgb(128, 0, 13);
+       }   
        .nav-1 > p{
         margin: 0px;
         margin-top: 35px;
@@ -49,13 +49,16 @@
         margin-top:40px;
         text-decoration: none;
        }
-      
+       .nav-2 > a:hover{
+        color: rgb(240, 14, 93);
+       }
        .nav-3{
-        border:2px solid blue;
-        display: flex;
-        justify-content: space-around;
+       display: flex;
+       justify-content: space-around;
         height:10%;
-      
+       }
+       #search:hover{
+        color:#FC2779;
        }
        .nav-3 > p{
         margin-top: 27px;
@@ -65,25 +68,20 @@
         margin:auto;
         padding:10px;
        }
-
        #middle{
         display: flex;
         margin:auto;
         padding:30px;
         column-gap: 16px;
         justify-content: center;
-
        }
        #img3{
         margin: auto;
         width:80%;
-
        }
        #middle-2{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-
-
        }
        #middle-2 > .img4 {
         border:2px solid red;
@@ -94,17 +92,19 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         width:100%;
-
+       }
+       .check > div:hover{
+       }
+       .check > div:hover{
+        color:rgb(236, 15, 52);
        }
        #dry-buy{
         display: flex;
         justify-content: center;
-        column-gap: 16px;
-       
+        column-gap: 16px;  
        }
        #dry-buy > .two-dry-buy > img{
         border-radius: 20px;
-
        }
        #golas{
         display:flex;
@@ -184,17 +184,14 @@
         border:2px solid grey;
         border-radius: 6px;
        }
-
        #para{
         border: 2px solid blue;
         justify-content: center;
         /* column-gap: 20px; */
-
        }
        #para > p{
         justify-content: space-around;
        }
-
        #bestseller{
         display: flex;
         justify-content: center;
@@ -285,8 +282,7 @@
       #game{
         display: flex;
         margin: auto;
-        justify-content: center;
-       
+        justify-content: center; 
       }
       #game > img{
         border:2px solid grey;
@@ -313,7 +309,6 @@
       #flower > .offerings{
         border-radius: 8px;
         border: 2px solid grey;
-
       }
       #pop{
       display: flex;
@@ -325,7 +320,6 @@
       #pop > .tech{
      border-radius:8px;
      border:2px solid grey;
-
       }
       #sport{
        display: flex;
@@ -358,7 +352,6 @@ footer > .fotter_sec1 {
     align-items: center;
     justify-content: space-around;
 }
-
 footer > .fotter_sec1 > .details_boxes {
     display: flex;
     flex-direction: column;
@@ -368,28 +361,23 @@ footer > .fotter_sec1 > .details_boxes {
     justify-content: center;
     gap: 10px;
 }
-
 footer > .fotter_sec1 > .details_boxes > h5 {
     text-align: center;
     color: #fff;
 }
-
 footer > .fotter_sec1 > .details_boxes > h4 {
     color: #fff;
 }
-
 footer > .fotter_sec1 > .details_boxes > .bx1 > .icons {
     font-size: 25px;
     color: #fff;
 }
-
 footer > .fotter_sec1 > .details_boxes > .bx1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
 }
-
 footer > .fotter_sec1 > .details_boxes > .bx2 {
     display: flex;
     flex-direction: row;
@@ -397,7 +385,6 @@ footer > .fotter_sec1 > .details_boxes > .bx2 {
     gap: 5px;
     justify-content: center;
 }
-
 footer > .fotter_sec1 > .details_boxes > .bx2 > input {
     border: none;
     background-color: #3F414D;
@@ -535,4 +522,79 @@ footer > .fotter_lastsec > ul > li > a{
 }
 footer > .fotter_lastsec > p{
     color: #fff;
+}
+.dropdown{
+  padding: 10px 5px;
+  font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.dropdown > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+}
+
+.dropdown a{
+  color: #212121;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#last_dropdown{
+  grid-column-start: 3/5;
+  grid-column-end: 5/5;
+}
+.dropdown div{
+  margin:auto;
+}
+.dropdown li {
+  list-style: none;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.hidden-box{
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: none;
+}
+.hidden-box a{
+  font-weight: 700;
+  font-size: 11px;
+}
+.hidden-box a:hover{
+  color: RGB(255, 111, 97);
+}
+.dropdown > ul > div > li:hover .hidden-box{
+  display: flex;
+  color: red;
+  grid-template-columns: repeat(auto-fill,auto);
+}
+.hidden-box > ul{
+  border-left: 1px solid grey;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.hidden-box>ul:first-child{
+  padding-right: 20px;
+  padding-left: 0px;
+  border-left: none;
+}
+.light > a{
+  color: #666666;
+  font-size: 12px;
+  font-weight: 400;
+}
+.hidden-box >div{
+  border: 1px solid black;
+}
+.inside > li:last-child{
+  padding-bottom: 10px;
+}
+.testingGap{
+ left: 30px;
+}
+.testingGap2{
+  right: 20px;
 }
