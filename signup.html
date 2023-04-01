@@ -44,6 +44,14 @@ form{
         width:60%;
         justify-content: center;
         height: 20%;
+        font-size: 20px;
+        border-radius: 10px;
+        padding-left: 15px;
+
+        /* background-color: rgb(85, 85, 249); */
+    }
+    form > input:hover{
+      color:mediumorchid
     }
     body{
     margin: auto;
@@ -53,15 +61,24 @@ form{
      justify-content: space-between; 
     }
     .nav > a{
-      display: block;
-      margin:65px;
-      
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    margin:65px;
+    border: 2px solid rgb(10, 2, 2);
+    background-color: rgb(237, 136, 237);
+    width:100px;
+    border-radius: 5px;
     }
+    .nav > a:hover{
+      color: crimson;
+    }
+
   </style>
 </head>
 <body>
     <form>
-        <h1>Please Enter Your Details</h1>
+        <h1>ENTER DETAILS TO SIGN-UP</h1>
       <input type="text" id="name" placeholder="Enter your name">
       <input type="email" id="email" placeholder="Enter your email">
       <input type="password" id="password" placeholder="Enter your password">
@@ -69,7 +86,7 @@ form{
 
       <div class="nav">
         <a href="./index.html" id="first">Signup</a>
-        <a href="./signin.html" id>Signin</a>
+        <!-- <a href="./signin.html" id>Signin</a> -->
       </div>
     </form>
 
@@ -88,7 +105,8 @@ form{
        }
        miltiUser.push(obj)
        localStorage.setItem("account-data",JSON.stringify(miltiUser))
-       alert("Login successful")
+       alert("User Registered successfully")
+       window.location.href="index.html"
   }
  
   
